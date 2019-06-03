@@ -1,0 +1,41 @@
+{
+  "name": "@nab/assessments",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NAB assessments",
+  "author": "phamtri2395",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": [
+    "assessment"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:phamtri2395/nab-assessments.git"
+  },
+  "workspaces": [
+    "assessments/*"
+  ],
+  "scripts": {
+    "pretty": "prettier-eslint --write \"**/*.[jt]s?(x)\"",
+    "lint": "eslint --color **/*.[jt]s?(x)",
+    "bootstrap": "lerna bootstrap",
+    "test": "lerna run test"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-react": "^7.13.0",
+    "husky": "^2.3.0",
+    "lerna": "^3.14.1",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1",
+    "prettier-eslint-cli": "^4.7.1"
+  }
+}
